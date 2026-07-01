@@ -12,9 +12,8 @@ namespace SBandSerialReader
 {
     internal class RegistersManagerUI
     {
-        public static int WriteRegisters(byte startReg, byte[] regs)
+        public static void WriteRegisters(byte startReg, byte[] regs)
         {
-            int receiveMsg = 0;
             Control.ControlCollection controls = Application.OpenForms["Form1"].Controls["panel1"].Controls["groupBox3"].Controls;
             for (int i = startReg; i < regs.Length + startReg; i++)
             {
@@ -74,7 +73,6 @@ namespace SBandSerialReader
                                       controls["textBoxRow5Data2"]);
                         break;
                     case (int)RegMap.ReceiveFifoMsgs:
-                        receiveMsg = regs[i - startReg];
                         SetFifoBytes(regs[i - startReg],
                                       controls["textBoxRow6Value1"],
                                       controls["textBoxRow6Data1"]);
@@ -184,8 +182,6 @@ namespace SBandSerialReader
                         break;
                 }
             }
-
-            return receiveMsg;
         }
 
         private static void setPower(byte data, Control textBoxHexValues, Control textBoxVarDatas)

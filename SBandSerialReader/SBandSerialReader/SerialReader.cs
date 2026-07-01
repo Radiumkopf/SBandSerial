@@ -12,16 +12,14 @@ namespace SBandSerialReader
     internal class SerialReader
     {
         private volatile SerialPort serialPort;
-        private SerialPort serialPort2;
         private Form1 form1;
         private CancellationToken cst;
 
-        public SerialReader(SerialPort serialPort, Form1 form1, CancellationToken cst, SerialPort serialPort2)
+        public SerialReader(SerialPort serialPort, Form1 form1, CancellationToken cst)
         {
             this.serialPort = serialPort;
             this.form1 = form1;
             this.cst = cst;
-            this.serialPort2 = serialPort2;
         }
 
         public void ReadBytes()
@@ -91,15 +89,6 @@ namespace SBandSerialReader
                                     {
                                         byte[] data = new byte[bytes[2]];
                                         Array.Copy(bytes, 3, data, 0, data.Length);
-
-                                        try
-                                        {
-                                            TlmPacket pack = TlmPacket.Parse(data);
-                                            byte[] data2 = pack.ToBytes();
-                                            serialPort2.Write(data2, 0, data2.Length);
-                                        }
-                                        catch { };
-
                                         form1.SetReadFifo(data);
                                     }));
                                 }

@@ -45,30 +45,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.labelConnectionStatus = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBoxAutoReadBuffers = new System.Windows.Forms.CheckBox();
-            this.textBoxTxBufferHEXLog = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBoxTxBufferASCII = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxRxBufferASCII = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.buttonWriteTxBuffer = new System.Windows.Forms.Button();
-            this.buttonReadRxBuffer = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBoxTxBufferHEX = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBoxRxBufferHEX = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.SendButton = new System.Windows.Forms.Button();
-            this.textBoxSendData = new System.Windows.Forms.TextBox();
-            this.labelServerStatus = new System.Windows.Forms.Label();
-            this.labelServerTransmitted = new System.Windows.Forms.Label();
-            this.labelServerReceived = new System.Windows.Forms.Label();
-            this.buttonCloseConnect = new System.Windows.Forms.Button();
-            this.buttonOpenConnect = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBoxRow22Data = new System.Windows.Forms.GroupBox();
             this.checkBoxRow22DataBit1 = new System.Windows.Forms.CheckBox();
@@ -305,12 +281,32 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBoxTxBufferHEXLog = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBoxTxBufferASCII = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBoxRxBufferASCII = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.buttonWriteTxBuffer = new System.Windows.Forms.Button();
+            this.buttonReadRxBuffer = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxTxBufferHEX = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBoxRxBufferHEX = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.SendButton = new System.Windows.Forms.Button();
+            this.textBoxSendData = new System.Windows.Forms.TextBox();
+            this.labelServerStatus = new System.Windows.Forms.Label();
+            this.labelServerTransmitted = new System.Windows.Forms.Label();
+            this.labelServerReceived = new System.Windows.Forms.Label();
+            this.buttonCloseConnect = new System.Windows.Forms.Button();
+            this.buttonOpenConnect = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDataBits)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBoxRow22Data.SuspendLayout();
             this.groupBoxRow21Data.SuspendLayout();
@@ -323,6 +319,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -529,265 +528,6 @@
             this.label1.Size = new System.Drawing.Size(34, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Port:";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.checkBoxAutoReadBuffers);
-            this.groupBox2.Controls.Add(this.textBoxTxBufferHEXLog);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.textBoxTxBufferASCII);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBoxRxBufferASCII);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.buttonWriteTxBuffer);
-            this.groupBox2.Controls.Add(this.buttonReadRxBuffer);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.textBoxTxBufferHEX);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBoxRxBufferHEX);
-            this.groupBox2.Location = new System.Drawing.Point(12, 264);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(400, 406);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Buffers";
-            // 
-            // checkBoxAutoReadBuffers
-            // 
-            this.checkBoxAutoReadBuffers.AutoSize = true;
-            this.checkBoxAutoReadBuffers.Checked = true;
-            this.checkBoxAutoReadBuffers.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxAutoReadBuffers.Location = new System.Drawing.Point(176, 158);
-            this.checkBoxAutoReadBuffers.Name = "checkBoxAutoReadBuffers";
-            this.checkBoxAutoReadBuffers.Size = new System.Drawing.Size(130, 20);
-            this.checkBoxAutoReadBuffers.TabIndex = 14;
-            this.checkBoxAutoReadBuffers.Text = "Auto read buffers";
-            this.checkBoxAutoReadBuffers.UseVisualStyleBackColor = true;
-            // 
-            // textBoxTxBufferHEXLog
-            // 
-            this.textBoxTxBufferHEXLog.Location = new System.Drawing.Point(56, 195);
-            this.textBoxTxBufferHEXLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxTxBufferHEXLog.Multiline = true;
-            this.textBoxTxBufferHEXLog.Name = "textBoxTxBufferHEXLog";
-            this.textBoxTxBufferHEXLog.ReadOnly = true;
-            this.textBoxTxBufferHEXLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxTxBufferHEXLog.Size = new System.Drawing.Size(337, 103);
-            this.textBoxTxBufferHEXLog.TabIndex = 13;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(7, 334);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 16);
-            this.label14.TabIndex = 12;
-            this.label14.Text = "ASCII:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(7, 306);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(37, 16);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "HEX:";
-            // 
-            // textBoxTxBufferASCII
-            // 
-            this.textBoxTxBufferASCII.Location = new System.Drawing.Point(56, 331);
-            this.textBoxTxBufferASCII.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxTxBufferASCII.Name = "textBoxTxBufferASCII";
-            this.textBoxTxBufferASCII.Size = new System.Drawing.Size(337, 22);
-            this.textBoxTxBufferASCII.TabIndex = 10;
-            this.textBoxTxBufferASCII.TextChanged += new System.EventHandler(this.textBoxTxBufferASCII_TextChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(8, 127);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 16);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "ASCII:";
-            // 
-            // textBoxRxBufferASCII
-            // 
-            this.textBoxRxBufferASCII.Location = new System.Drawing.Point(60, 121);
-            this.textBoxRxBufferASCII.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxRxBufferASCII.Name = "textBoxRxBufferASCII";
-            this.textBoxRxBufferASCII.ReadOnly = true;
-            this.textBoxRxBufferASCII.Size = new System.Drawing.Size(335, 22);
-            this.textBoxRxBufferASCII.TabIndex = 8;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(5, 50);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(37, 16);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "HEX:";
-            // 
-            // buttonWriteTxBuffer
-            // 
-            this.buttonWriteTxBuffer.Location = new System.Drawing.Point(6, 358);
-            this.buttonWriteTxBuffer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonWriteTxBuffer.Name = "buttonWriteTxBuffer";
-            this.buttonWriteTxBuffer.Size = new System.Drawing.Size(164, 40);
-            this.buttonWriteTxBuffer.TabIndex = 6;
-            this.buttonWriteTxBuffer.Text = "Write TX buffer";
-            this.buttonWriteTxBuffer.UseVisualStyleBackColor = true;
-            this.buttonWriteTxBuffer.Click += new System.EventHandler(this.buttonWriteTxBuffer_Click);
-            // 
-            // buttonReadRxBuffer
-            // 
-            this.buttonReadRxBuffer.Location = new System.Drawing.Point(5, 147);
-            this.buttonReadRxBuffer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonReadRxBuffer.Name = "buttonReadRxBuffer";
-            this.buttonReadRxBuffer.Size = new System.Drawing.Size(164, 40);
-            this.buttonReadRxBuffer.TabIndex = 4;
-            this.buttonReadRxBuffer.Text = "Read RX buffer";
-            this.buttonReadRxBuffer.UseVisualStyleBackColor = true;
-            this.buttonReadRxBuffer.Click += new System.EventHandler(this.buttonReadRxBuffer_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(9, 200);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(24, 16);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "TX";
-            // 
-            // textBoxTxBufferHEX
-            // 
-            this.textBoxTxBufferHEX.Location = new System.Drawing.Point(56, 302);
-            this.textBoxTxBufferHEX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxTxBufferHEX.Name = "textBoxTxBufferHEX";
-            this.textBoxTxBufferHEX.Size = new System.Drawing.Size(337, 22);
-            this.textBoxTxBufferHEX.TabIndex = 2;
-            this.textBoxTxBufferHEX.TextChanged += new System.EventHandler(this.textBoxTxBufferHEX_TextChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 28);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(25, 16);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "RX";
-            // 
-            // textBoxRxBufferHEX
-            // 
-            this.textBoxRxBufferHEX.Location = new System.Drawing.Point(60, 19);
-            this.textBoxRxBufferHEX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBoxRxBufferHEX.Multiline = true;
-            this.textBoxRxBufferHEX.Name = "textBoxRxBufferHEX";
-            this.textBoxRxBufferHEX.ReadOnly = true;
-            this.textBoxRxBufferHEX.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRxBufferHEX.Size = new System.Drawing.Size(335, 98);
-            this.textBoxRxBufferHEX.TabIndex = 0;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.SendButton);
-            this.groupBox4.Controls.Add(this.textBoxSendData);
-            this.groupBox4.Controls.Add(this.labelServerStatus);
-            this.groupBox4.Controls.Add(this.labelServerTransmitted);
-            this.groupBox4.Controls.Add(this.labelServerReceived);
-            this.groupBox4.Controls.Add(this.buttonCloseConnect);
-            this.groupBox4.Controls.Add(this.buttonOpenConnect);
-            this.groupBox4.Location = new System.Drawing.Point(13, 674);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(400, 157);
-            this.groupBox4.TabIndex = 176;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Server";
-            // 
-            // SendButton
-            // 
-            this.SendButton.Location = new System.Drawing.Point(308, 123);
-            this.SendButton.Margin = new System.Windows.Forms.Padding(4);
-            this.SendButton.Name = "SendButton";
-            this.SendButton.Size = new System.Drawing.Size(83, 22);
-            this.SendButton.TabIndex = 6;
-            this.SendButton.Text = "Send";
-            this.SendButton.UseVisualStyleBackColor = true;
-            this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
-            // 
-            // textBoxSendData
-            // 
-            this.textBoxSendData.Location = new System.Drawing.Point(6, 123);
-            this.textBoxSendData.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxSendData.Multiline = true;
-            this.textBoxSendData.Name = "textBoxSendData";
-            this.textBoxSendData.Size = new System.Drawing.Size(293, 21);
-            this.textBoxSendData.TabIndex = 5;
-            // 
-            // labelServerStatus
-            // 
-            this.labelServerStatus.AutoSize = true;
-            this.labelServerStatus.Location = new System.Drawing.Point(176, 22);
-            this.labelServerStatus.Name = "labelServerStatus";
-            this.labelServerStatus.Size = new System.Drawing.Size(134, 16);
-            this.labelServerStatus.TabIndex = 4;
-            this.labelServerStatus.Text = "Server not connected";
-            // 
-            // labelServerTransmitted
-            // 
-            this.labelServerTransmitted.AutoSize = true;
-            this.labelServerTransmitted.Location = new System.Drawing.Point(174, 96);
-            this.labelServerTransmitted.Name = "labelServerTransmitted";
-            this.labelServerTransmitted.Size = new System.Drawing.Size(112, 16);
-            this.labelServerTransmitted.TabIndex = 3;
-            this.labelServerTransmitted.Text = "Messages sent: 0";
-            // 
-            // labelServerReceived
-            // 
-            this.labelServerReceived.AutoSize = true;
-            this.labelServerReceived.Location = new System.Drawing.Point(174, 80);
-            this.labelServerReceived.Name = "labelServerReceived";
-            this.labelServerReceived.Size = new System.Drawing.Size(140, 16);
-            this.labelServerReceived.TabIndex = 2;
-            this.labelServerReceived.Text = "Messages received: 0";
-            // 
-            // buttonCloseConnect
-            // 
-            this.buttonCloseConnect.Location = new System.Drawing.Point(6, 70);
-            this.buttonCloseConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonCloseConnect.Name = "buttonCloseConnect";
-            this.buttonCloseConnect.Size = new System.Drawing.Size(164, 47);
-            this.buttonCloseConnect.TabIndex = 1;
-            this.buttonCloseConnect.Text = "CloseConnection";
-            this.buttonCloseConnect.UseVisualStyleBackColor = true;
-            this.buttonCloseConnect.Click += new System.EventHandler(this.buttonCloseConnect_Click);
-            // 
-            // buttonOpenConnect
-            // 
-            this.buttonOpenConnect.Location = new System.Drawing.Point(6, 21);
-            this.buttonOpenConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.buttonOpenConnect.Name = "buttonOpenConnect";
-            this.buttonOpenConnect.Size = new System.Drawing.Size(164, 47);
-            this.buttonOpenConnect.TabIndex = 0;
-            this.buttonOpenConnect.Text = "Open connection";
-            this.buttonOpenConnect.UseVisualStyleBackColor = true;
-            this.buttonOpenConnect.Click += new System.EventHandler(this.buttonOpenConnect_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Location = new System.Drawing.Point(430, 12);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1021, 822);
-            this.panel1.TabIndex = 175;
             // 
             // groupBox3
             // 
@@ -3460,15 +3200,261 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "№ of register";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBoxTxBufferHEXLog);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.textBoxTxBufferASCII);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.textBoxRxBufferASCII);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.buttonWriteTxBuffer);
+            this.groupBox2.Controls.Add(this.buttonReadRxBuffer);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.textBoxTxBufferHEX);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.textBoxRxBufferHEX);
+            this.groupBox2.Location = new System.Drawing.Point(12, 264);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(400, 406);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Buffers";
+            // 
+            // textBoxTxBufferHEXLog
+            // 
+            this.textBoxTxBufferHEXLog.Location = new System.Drawing.Point(56, 195);
+            this.textBoxTxBufferHEXLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTxBufferHEXLog.Multiline = true;
+            this.textBoxTxBufferHEXLog.Name = "textBoxTxBufferHEXLog";
+            this.textBoxTxBufferHEXLog.ReadOnly = true;
+            this.textBoxTxBufferHEXLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxTxBufferHEXLog.Size = new System.Drawing.Size(337, 103);
+            this.textBoxTxBufferHEXLog.TabIndex = 13;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(7, 334);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 16);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "ASCII:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(7, 306);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(37, 16);
+            this.label15.TabIndex = 11;
+            this.label15.Text = "HEX:";
+            // 
+            // textBoxTxBufferASCII
+            // 
+            this.textBoxTxBufferASCII.Location = new System.Drawing.Point(56, 331);
+            this.textBoxTxBufferASCII.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTxBufferASCII.Name = "textBoxTxBufferASCII";
+            this.textBoxTxBufferASCII.Size = new System.Drawing.Size(337, 22);
+            this.textBoxTxBufferASCII.TabIndex = 10;
+            this.textBoxTxBufferASCII.TextChanged += new System.EventHandler(this.textBoxTxBufferASCII_TextChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(8, 127);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 16);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "ASCII:";
+            // 
+            // textBoxRxBufferASCII
+            // 
+            this.textBoxRxBufferASCII.Location = new System.Drawing.Point(60, 121);
+            this.textBoxRxBufferASCII.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRxBufferASCII.Name = "textBoxRxBufferASCII";
+            this.textBoxRxBufferASCII.ReadOnly = true;
+            this.textBoxRxBufferASCII.Size = new System.Drawing.Size(335, 22);
+            this.textBoxRxBufferASCII.TabIndex = 8;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(5, 50);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 16);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "HEX:";
+            // 
+            // buttonWriteTxBuffer
+            // 
+            this.buttonWriteTxBuffer.Location = new System.Drawing.Point(6, 358);
+            this.buttonWriteTxBuffer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonWriteTxBuffer.Name = "buttonWriteTxBuffer";
+            this.buttonWriteTxBuffer.Size = new System.Drawing.Size(164, 40);
+            this.buttonWriteTxBuffer.TabIndex = 6;
+            this.buttonWriteTxBuffer.Text = "Write TX buffer";
+            this.buttonWriteTxBuffer.UseVisualStyleBackColor = true;
+            this.buttonWriteTxBuffer.Click += new System.EventHandler(this.buttonWriteTxBuffer_Click);
+            // 
+            // buttonReadRxBuffer
+            // 
+            this.buttonReadRxBuffer.Location = new System.Drawing.Point(5, 147);
+            this.buttonReadRxBuffer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonReadRxBuffer.Name = "buttonReadRxBuffer";
+            this.buttonReadRxBuffer.Size = new System.Drawing.Size(164, 40);
+            this.buttonReadRxBuffer.TabIndex = 4;
+            this.buttonReadRxBuffer.Text = "Read RX buffer";
+            this.buttonReadRxBuffer.UseVisualStyleBackColor = true;
+            this.buttonReadRxBuffer.Click += new System.EventHandler(this.buttonReadRxBuffer_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(9, 200);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 16);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "TX";
+            // 
+            // textBoxTxBufferHEX
+            // 
+            this.textBoxTxBufferHEX.Location = new System.Drawing.Point(56, 302);
+            this.textBoxTxBufferHEX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxTxBufferHEX.Name = "textBoxTxBufferHEX";
+            this.textBoxTxBufferHEX.Size = new System.Drawing.Size(337, 22);
+            this.textBoxTxBufferHEX.TabIndex = 2;
+            this.textBoxTxBufferHEX.TextChanged += new System.EventHandler(this.textBoxTxBufferHEX_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(5, 28);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(25, 16);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "RX";
+            // 
+            // textBoxRxBufferHEX
+            // 
+            this.textBoxRxBufferHEX.Location = new System.Drawing.Point(60, 19);
+            this.textBoxRxBufferHEX.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRxBufferHEX.Multiline = true;
+            this.textBoxRxBufferHEX.Name = "textBoxRxBufferHEX";
+            this.textBoxRxBufferHEX.ReadOnly = true;
+            this.textBoxRxBufferHEX.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxRxBufferHEX.Size = new System.Drawing.Size(335, 98);
+            this.textBoxRxBufferHEX.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Location = new System.Drawing.Point(419, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1021, 822);
+            this.panel1.TabIndex = 175;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.SendButton);
+            this.groupBox4.Controls.Add(this.textBoxSendData);
+            this.groupBox4.Controls.Add(this.labelServerStatus);
+            this.groupBox4.Controls.Add(this.labelServerTransmitted);
+            this.groupBox4.Controls.Add(this.labelServerReceived);
+            this.groupBox4.Controls.Add(this.buttonCloseConnect);
+            this.groupBox4.Controls.Add(this.buttonOpenConnect);
+            this.groupBox4.Location = new System.Drawing.Point(13, 674);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(400, 157);
+            this.groupBox4.TabIndex = 176;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Server";
+            // 
+            // SendButton
+            // 
+            this.SendButton.Location = new System.Drawing.Point(308, 123);
+            this.SendButton.Margin = new System.Windows.Forms.Padding(4);
+            this.SendButton.Name = "SendButton";
+            this.SendButton.Size = new System.Drawing.Size(83, 22);
+            this.SendButton.TabIndex = 6;
+            this.SendButton.Text = "Send";
+            this.SendButton.UseVisualStyleBackColor = true;
+            this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
+            // 
+            // textBoxSendData
+            // 
+            this.textBoxSendData.Location = new System.Drawing.Point(6, 123);
+            this.textBoxSendData.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSendData.Multiline = true;
+            this.textBoxSendData.Name = "textBoxSendData";
+            this.textBoxSendData.Size = new System.Drawing.Size(293, 21);
+            this.textBoxSendData.TabIndex = 5;
+            // 
+            // labelServerStatus
+            // 
+            this.labelServerStatus.AutoSize = true;
+            this.labelServerStatus.Location = new System.Drawing.Point(176, 22);
+            this.labelServerStatus.Name = "labelServerStatus";
+            this.labelServerStatus.Size = new System.Drawing.Size(134, 16);
+            this.labelServerStatus.TabIndex = 4;
+            this.labelServerStatus.Text = "Server not connected";
+            // 
+            // labelServerTransmitted
+            // 
+            this.labelServerTransmitted.AutoSize = true;
+            this.labelServerTransmitted.Location = new System.Drawing.Point(174, 96);
+            this.labelServerTransmitted.Name = "labelServerTransmitted";
+            this.labelServerTransmitted.Size = new System.Drawing.Size(112, 16);
+            this.labelServerTransmitted.TabIndex = 3;
+            this.labelServerTransmitted.Text = "Messages sent: 0";
+            // 
+            // labelServerReceived
+            // 
+            this.labelServerReceived.AutoSize = true;
+            this.labelServerReceived.Location = new System.Drawing.Point(174, 80);
+            this.labelServerReceived.Name = "labelServerReceived";
+            this.labelServerReceived.Size = new System.Drawing.Size(140, 16);
+            this.labelServerReceived.TabIndex = 2;
+            this.labelServerReceived.Text = "Messages received: 0";
+            // 
+            // buttonCloseConnect
+            // 
+            this.buttonCloseConnect.Location = new System.Drawing.Point(6, 70);
+            this.buttonCloseConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonCloseConnect.Name = "buttonCloseConnect";
+            this.buttonCloseConnect.Size = new System.Drawing.Size(164, 47);
+            this.buttonCloseConnect.TabIndex = 1;
+            this.buttonCloseConnect.Text = "CloseConnection";
+            this.buttonCloseConnect.UseVisualStyleBackColor = true;
+            this.buttonCloseConnect.Click += new System.EventHandler(this.buttonCloseConnect_Click);
+            // 
+            // buttonOpenConnect
+            // 
+            this.buttonOpenConnect.Location = new System.Drawing.Point(6, 21);
+            this.buttonOpenConnect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonOpenConnect.Name = "buttonOpenConnect";
+            this.buttonOpenConnect.Size = new System.Drawing.Size(164, 47);
+            this.buttonOpenConnect.TabIndex = 0;
+            this.buttonOpenConnect.Text = "Open connection";
+            this.buttonOpenConnect.UseVisualStyleBackColor = true;
+            this.buttonOpenConnect.Click += new System.EventHandler(this.buttonOpenConnect_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1468, 845);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1439, 842);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -3476,11 +3462,6 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDataBits)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBoxRow22Data.ResumeLayout(false);
@@ -3502,6 +3483,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -3523,7 +3509,55 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBoxRow0Data;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxRow0Value;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxRow1Data1;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBoxRow1Data5;
+        private System.Windows.Forms.TextBox textBoxRow1Data4;
+        private System.Windows.Forms.TextBox textBoxRow1Data3;
+        private System.Windows.Forms.TextBox textBoxRow1Data2;
+        private System.Windows.Forms.TextBox textBoxRow1Value5;
+        private System.Windows.Forms.TextBox textBoxRow1Value4;
+        private System.Windows.Forms.TextBox textBoxRow1Value3;
+        private System.Windows.Forms.TextBox textBoxRow1Value2;
+        private System.Windows.Forms.TextBox textBoxRow1Value1;
+        private System.Windows.Forms.TextBox textBoxRow4Data5;
+        private System.Windows.Forms.TextBox textBoxRow4Data4;
+        private System.Windows.Forms.TextBox textBoxRow4Data3;
+        private System.Windows.Forms.TextBox textBoxRow4Data2;
+        private System.Windows.Forms.TextBox textBoxRow4Data1;
+        private System.Windows.Forms.TextBox textBoxRow3Data5;
+        private System.Windows.Forms.TextBox textBoxRow3Data4;
+        private System.Windows.Forms.TextBox textBoxRow3Data3;
+        private System.Windows.Forms.TextBox textBoxRow3Data2;
+        private System.Windows.Forms.TextBox textBoxRow3Data1;
+        private System.Windows.Forms.TextBox textBoxRow4Value5;
+        private System.Windows.Forms.TextBox textBoxRow4Value4;
+        private System.Windows.Forms.TextBox textBoxRow4Value3;
+        private System.Windows.Forms.TextBox textBoxRow4Value2;
+        private System.Windows.Forms.TextBox textBoxRow4Value1;
+        private System.Windows.Forms.TextBox textBoxRow3Value5;
+        private System.Windows.Forms.TextBox textBoxRow3Value4;
+        private System.Windows.Forms.TextBox textBoxRow3Value3;
+        private System.Windows.Forms.TextBox textBoxRow3Value2;
+        private System.Windows.Forms.TextBox textBoxRow3Value1;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button buttonWriteTxBuffer;
         private System.Windows.Forms.Button buttonReadRxBuffer;
@@ -3537,69 +3571,105 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBoxTxBufferASCII;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button buttonCloseConnect;
-        private System.Windows.Forms.Button buttonOpenConnect;
-        private System.Windows.Forms.Label labelServerReceived;
-        private System.Windows.Forms.Label labelServerStatus;
-        private System.Windows.Forms.Label labelServerTransmitted;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button SendButton;
-        private System.Windows.Forms.TextBox textBoxSendData;
-        private System.Windows.Forms.TextBox textBoxTxBufferHEXLog;
-        private System.Windows.Forms.CheckBox checkBoxAutoReadBuffers;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBoxRow5Data1;
+        private System.Windows.Forms.TextBox textBoxRow5Value1;
+        private System.Windows.Forms.TextBox textBoxRow5Value2;
+        private System.Windows.Forms.TextBox textBoxRow6Value2;
+        private System.Windows.Forms.TextBox textBoxRow6Data1;
+        private System.Windows.Forms.TextBox textBoxRow6Value1;
+        private System.Windows.Forms.TextBox textBoxRow14Value;
+        private System.Windows.Forms.TextBox textBoxRow13Value;
+        private System.Windows.Forms.TextBox textBoxRow12Value;
+        private System.Windows.Forms.TextBox textBoxRow11Value;
+        private System.Windows.Forms.TextBox textBoxRow10Value4;
+        private System.Windows.Forms.TextBox textBoxRow10Value3;
+        private System.Windows.Forms.TextBox textBoxRow10Value2;
+        private System.Windows.Forms.TextBox textBoxRow10Value1;
+        private System.Windows.Forms.TextBox textBoxRow9Value;
+        private System.Windows.Forms.TextBox textBoxRow8Value;
+        private System.Windows.Forms.TextBox textBoxRow7Value;
+        private System.Windows.Forms.TextBox textBoxRow10Data;
+        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.Button buttonRow2Data;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.CheckBox checkBoxRow9DataBit4;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.CheckBox checkBoxRow9DataBit3;
+        private System.Windows.Forms.GroupBox groupBoxRow9DataBit5;
+        private System.Windows.Forms.RadioButton radioButtonRow9DataBitFsk;
+        private System.Windows.Forms.RadioButton radioButtonRow9DataBitLora;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.CheckBox checkBoxRow8DataBit6;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.CheckBox checkBoxRow8DataBit7;
+        private System.Windows.Forms.ComboBox comboBoxRow14Data;
+        private System.Windows.Forms.ComboBox comboBoxRow13Data;
+        private System.Windows.Forms.ComboBox comboBoxRow12Data;
+        private System.Windows.Forms.TextBox textBoxRow11Data;
+        private System.Windows.Forms.GroupBox groupBoxRow7Data;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit0;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit1;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit7;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit2;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit6;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit3;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit5;
+        private System.Windows.Forms.CheckBox checkBoxRow7DataBit4;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.GroupBox groupBoxRow8Data;
+        private System.Windows.Forms.GroupBox groupBoxRow9Data;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBoxRow6Data2;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBoxRow5Data2;
+        private System.Windows.Forms.Button buttonSetFrequency;
+        private System.Windows.Forms.Button buttonRow9DataBit0;
+        private System.Windows.Forms.Button buttonRow9DataBit1;
+        private System.Windows.Forms.CheckBox checkBoxRow9DataBit7;
+        private System.Windows.Forms.CheckBox checkBoxRow9DataBit6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBoxRow22Data;
-        private System.Windows.Forms.CheckBox checkBoxRow22DataBit1;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.CheckBox checkBoxRow22DataBit0;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.CheckBox checkBoxRow22DataBit3;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.CheckBox checkBoxRow22DataBit2;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.CheckBox checkBoxRow22DataBit5;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.CheckBox checkBoxRow22DataBit4;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.GroupBox groupBoxRow21Data;
-        private System.Windows.Forms.CheckBox checkBoxRow21DataBit1;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.CheckBox checkBoxRow21DataBit0;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.CheckBox checkBoxRow21DataBit3;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.CheckBox checkBoxRow21DataBit2;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.CheckBox checkBoxRow21DataBit5;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.CheckBox checkBoxRow21DataBit4;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.GroupBox groupBoxRow20Data;
-        private System.Windows.Forms.CheckBox checkBoxRow20DataBit1;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.CheckBox checkBoxRow20DataBit0;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.CheckBox checkBoxRow20DataBit3;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.CheckBox checkBoxRow20DataBit2;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.CheckBox checkBoxRow20DataBit5;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.CheckBox checkBoxRow20DataBit4;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox comboBoxRow19Data;
-        private System.Windows.Forms.TextBox textBoxRow24Value;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBoxRow24Data;
-        private System.Windows.Forms.TextBox textBox64;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBoxRow22Value;
-        private System.Windows.Forms.TextBox textBox69;
-        private System.Windows.Forms.TextBox textBox70;
+        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.GroupBox groupBoxRow23Data;
-        private System.Windows.Forms.ComboBox comboBoxRow23DataBits0_3;
         private System.Windows.Forms.CheckBox checkBoxRow23DataBit7;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.CheckBox checkBoxRow23DataBit6;
@@ -3638,153 +3708,68 @@
         private System.Windows.Forms.TextBox textBoxRow15Value3;
         private System.Windows.Forms.TextBox textBoxRow15Value2;
         private System.Windows.Forms.TextBox textBoxRow15Value1;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button buttonSetFrequency;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBoxRow6Data2;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBoxRow5Data2;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.GroupBox groupBoxRow9Data;
-        private System.Windows.Forms.Button buttonRow9DataBits2;
-        private System.Windows.Forms.Button buttonRow9DataBit0;
-        private System.Windows.Forms.Button buttonRow9DataBit1;
-        private System.Windows.Forms.CheckBox checkBoxRow9DataBit4;
-        private System.Windows.Forms.CheckBox checkBoxRow9DataBit7;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.CheckBox checkBoxRow9DataBit6;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.CheckBox checkBoxRow9DataBit3;
-        private System.Windows.Forms.GroupBox groupBoxRow9DataBit5;
-        private System.Windows.Forms.RadioButton radioButtonRow9DataBitFsk;
-        private System.Windows.Forms.RadioButton radioButtonRow9DataBitLora;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox groupBoxRow8Data;
-        private System.Windows.Forms.ComboBox comboBoxRow8DataBits0_2;
+        private System.Windows.Forms.TextBox textBoxRow24Value;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBoxRow24Data;
+        private System.Windows.Forms.TextBox textBox64;
+        private System.Windows.Forms.TextBox textBox65;
+        private System.Windows.Forms.TextBox textBoxRow22Value;
+        private System.Windows.Forms.TextBox textBox69;
+        private System.Windows.Forms.TextBox textBox70;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button buttonCloseConnect;
+        private System.Windows.Forms.Button buttonOpenConnect;
+        private System.Windows.Forms.Label labelServerReceived;
+        private System.Windows.Forms.Label labelServerStatus;
+        private System.Windows.Forms.Label labelServerTransmitted;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ComboBox comboBoxRow19Data;
         private System.Windows.Forms.ComboBox comboBoxRow8DataBits3_5;
-        private System.Windows.Forms.CheckBox checkBoxRow8DataBit7;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.CheckBox checkBoxRow8DataBit6;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.GroupBox groupBoxRow7Data;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit0;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit1;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit7;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit2;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit6;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit3;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit5;
-        private System.Windows.Forms.CheckBox checkBoxRow7DataBit4;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBoxRow11Data;
-        private System.Windows.Forms.ComboBox comboBoxRow14Data;
-        private System.Windows.Forms.ComboBox comboBoxRow13Data;
-        private System.Windows.Forms.ComboBox comboBoxRow12Data;
-        private System.Windows.Forms.Button buttonRow2Data;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBoxRow10Data;
-        private System.Windows.Forms.TextBox textBoxRow14Value;
-        private System.Windows.Forms.TextBox textBoxRow13Value;
-        private System.Windows.Forms.TextBox textBoxRow12Value;
-        private System.Windows.Forms.TextBox textBoxRow11Value;
-        private System.Windows.Forms.TextBox textBoxRow10Value4;
-        private System.Windows.Forms.TextBox textBoxRow10Value3;
-        private System.Windows.Forms.TextBox textBoxRow10Value2;
-        private System.Windows.Forms.TextBox textBoxRow10Value1;
-        private System.Windows.Forms.TextBox textBoxRow9Value;
-        private System.Windows.Forms.TextBox textBoxRow8Value;
-        private System.Windows.Forms.TextBox textBoxRow7Value;
-        private System.Windows.Forms.TextBox textBoxRow6Value2;
-        private System.Windows.Forms.TextBox textBoxRow6Data1;
-        private System.Windows.Forms.TextBox textBoxRow6Value1;
-        private System.Windows.Forms.TextBox textBoxRow5Value2;
-        private System.Windows.Forms.TextBox textBoxRow5Data1;
-        private System.Windows.Forms.TextBox textBoxRow5Value1;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBoxRow4Data5;
-        private System.Windows.Forms.TextBox textBoxRow4Data4;
-        private System.Windows.Forms.TextBox textBoxRow4Data3;
-        private System.Windows.Forms.TextBox textBoxRow4Data2;
-        private System.Windows.Forms.TextBox textBoxRow4Data1;
-        private System.Windows.Forms.TextBox textBoxRow3Data5;
-        private System.Windows.Forms.TextBox textBoxRow3Data4;
-        private System.Windows.Forms.TextBox textBoxRow3Data3;
-        private System.Windows.Forms.TextBox textBoxRow3Data2;
-        private System.Windows.Forms.TextBox textBoxRow3Data1;
-        private System.Windows.Forms.TextBox textBoxRow4Value5;
-        private System.Windows.Forms.TextBox textBoxRow4Value4;
-        private System.Windows.Forms.TextBox textBoxRow4Value3;
-        private System.Windows.Forms.TextBox textBoxRow4Value2;
-        private System.Windows.Forms.TextBox textBoxRow4Value1;
-        private System.Windows.Forms.TextBox textBoxRow3Value5;
-        private System.Windows.Forms.TextBox textBoxRow3Value4;
-        private System.Windows.Forms.TextBox textBoxRow3Value3;
-        private System.Windows.Forms.TextBox textBoxRow3Value2;
-        private System.Windows.Forms.TextBox textBoxRow3Value1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBoxRow1Value5;
-        private System.Windows.Forms.TextBox textBoxRow1Value4;
-        private System.Windows.Forms.TextBox textBoxRow1Value3;
-        private System.Windows.Forms.TextBox textBoxRow1Value2;
-        private System.Windows.Forms.TextBox textBoxRow1Value1;
-        private System.Windows.Forms.TextBox textBoxRow1Data5;
-        private System.Windows.Forms.TextBox textBoxRow1Data4;
-        private System.Windows.Forms.TextBox textBoxRow1Data3;
-        private System.Windows.Forms.TextBox textBoxRow1Data2;
-        private System.Windows.Forms.TextBox textBoxRow1Data1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBoxRow0Data;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBoxRow0Value;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBoxRow8DataBits0_2;
+        private System.Windows.Forms.Button buttonRow9DataBits2;
+        private System.Windows.Forms.ComboBox comboBoxRow23DataBits0_3;
+        private System.Windows.Forms.GroupBox groupBoxRow20Data;
+        private System.Windows.Forms.CheckBox checkBoxRow20DataBit5;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.CheckBox checkBoxRow20DataBit4;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.GroupBox groupBoxRow22Data;
+        private System.Windows.Forms.CheckBox checkBoxRow22DataBit1;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.CheckBox checkBoxRow22DataBit0;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.CheckBox checkBoxRow22DataBit3;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.CheckBox checkBoxRow22DataBit2;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.CheckBox checkBoxRow22DataBit5;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.CheckBox checkBoxRow22DataBit4;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.GroupBox groupBoxRow21Data;
+        private System.Windows.Forms.CheckBox checkBoxRow21DataBit1;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.CheckBox checkBoxRow21DataBit0;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.CheckBox checkBoxRow21DataBit3;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.CheckBox checkBoxRow21DataBit2;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.CheckBox checkBoxRow21DataBit5;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.CheckBox checkBoxRow21DataBit4;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.CheckBox checkBoxRow20DataBit1;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.CheckBox checkBoxRow20DataBit0;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.CheckBox checkBoxRow20DataBit3;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.CheckBox checkBoxRow20DataBit2;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Button SendButton;
+        private System.Windows.Forms.TextBox textBoxSendData;
+        private System.Windows.Forms.TextBox textBoxTxBufferHEXLog;
     }
 }
 

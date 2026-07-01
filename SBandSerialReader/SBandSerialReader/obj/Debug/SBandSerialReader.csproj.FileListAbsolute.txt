@@ -61,23 +61,33 @@ C:\Users\PC\Desktop\WebApplication1\SBandSerialReader\SBandSerialReader\obj\Debu
 C:\Users\PC\Desktop\WebApplication1\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
 C:\Users\PC\Desktop\WebApplication1\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
 C:\Users\PC\Desktop\WebApplication1\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe.config
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.pdb
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.AssemblyReference.cache
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Form1.resources
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Properties.Resources.resources
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.GenerateResource.cache
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
-C:\Users\ForceFire\Desktop\250 склад\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe.config
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.pdb
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.AssemblyReference.cache
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Form1.resources
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Properties.Resources.resources
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.GenerateResource.cache
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
-C:\Users\ForceFire\Desktop\250\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe.config
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.pdb
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.AssemblyReference.cache
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Form1.resources
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Properties.Resources.resources
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.GenerateResource.cache
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
+C:\Users\smoly\Desktop\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe.config
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.pdb
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.AssemblyReference.cache
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Form1.resources
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Properties.Resources.resources
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.GenerateResource.cache
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
+C:\Users\smoly\Desktop\Новая папка\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe.config
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.pdb
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.AssemblyReference.cache
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Form1.resources
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Properties.Resources.resources
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.GenerateResource.cache
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
+D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb

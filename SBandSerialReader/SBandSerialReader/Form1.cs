@@ -21,7 +21,6 @@ namespace SBandSerialReader
     {
         private const int deviceAddress = 0x80;
         private static volatile SerialPort serialPort;
-        private static volatile SerialPort serialPort2;
         private static CancellationTokenSource cts;
 
         private TcpServer server = new TcpServer();
@@ -83,7 +82,7 @@ namespace SBandSerialReader
         }
 
 
-        public Form1()      //form1
+        public Form1()
         {
             InitializeComponent();
             serialPort = new SerialPort();
@@ -91,18 +90,12 @@ namespace SBandSerialReader
             serialPort.Parity = Parity.None;
             serialPort.DataBits = 8;
             serialPort.StopBits = StopBits.One;
-
-            serialPort2 = new SerialPort();
-            serialPort2.BaudRate = 115200;
-            serialPort2.Parity = Parity.None;
-            serialPort2.DataBits = 8;
-            serialPort2.StopBits = StopBits.One;
             cts = new CancellationTokenSource();
 
-            aTimer = new System.Timers.Timer(100);
+            aTimer = new System.Timers.Timer(500);
             aTimer.Elapsed += OnTimedEvent;
             aTimer.AutoReset = true;
-            aTimer.Enabled = true;
+            //aTimer.Enabled = true;
 
             panel1.Controls.Add(groupBox3);
 
@@ -314,18 +307,7 @@ namespace SBandSerialReader
             isReadingRegs = true;
             using (BeginUiUpdate())
             {
-                int receivedMsg = RegistersManagerUI.WriteRegisters(startReg, regs);
-
-                if(receivedMsg > 0 && checkBoxAutoReadBuffers.Checked) {
-                    for (int i = 0; i < receivedMsg; i++)
-                    {
-                        byte[] read = CommandGenerator.FifoRead(deviceAddress);
-                        if (serialPort.IsOpen)
-                        {
-                            serialPort.Write(read, 0, read.Length);
-                        }
-                    }
-                }
+                RegistersManagerUI.WriteRegisters(startReg, regs);
             }
             isReadingRegs = false;
         }
@@ -413,18 +395,10 @@ namespace SBandSerialReader
             {
                 if (comboBoxSelectedPort.SelectedItem != null)
                 {
-                    if (!serialPort2.IsOpen)
-                    {
-                        serialPort2 = new SerialPort();
-                        serialPort2.PortName = "COM8";
-                        serialPort2.BaudRate = 115200;
-                        serialPort2.Open();
-                    }
-
                     serialPort.PortName = comboBoxSelectedPort.SelectedItem.ToString();
                     serialPort.Open();
 
-                    SerialReader serialReader = new SerialReader(serialPort, this, cts.Token, serialPort2);
+                    SerialReader serialReader = new SerialReader(serialPort, this, cts.Token);
                     Thread readingThread = new Thread(serialReader.ReadBytes);
                     readingThread.IsBackground = true;
                     readingThread.Start();
@@ -446,11 +420,6 @@ namespace SBandSerialReader
             }
             else
             {
-                if (serialPort2.IsOpen)
-                {
-                    serialPort2.Close();
-                }
-
                 serialPort.Close();
 
                 OnPortDisconnected();
@@ -570,22 +539,22 @@ namespace SBandSerialReader
 
         private void textBoxRow3Value1_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.TransmitAdress5);
+            controlsHexValueChanged(RegMap.TransmitAdress1);
         }
 
         private void textBoxRow3Data1_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.TransmitAdress5);
+            controlsVarDataChanged(RegMap.TransmitAdress1);
         }
 
         private void textBoxRow3Value2_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.TransmitAdress4);
+            controlsHexValueChanged(RegMap.TransmitAdress2);
         }
 
         private void textBoxRow3Data2_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.TransmitAdress4);
+            controlsVarDataChanged(RegMap.TransmitAdress2);
         }
 
         private void textBoxRow3Value3_TextChanged(object sender, EventArgs e)
@@ -600,42 +569,42 @@ namespace SBandSerialReader
 
         private void textBoxRow3Value4_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.TransmitAdress2);
+            controlsHexValueChanged(RegMap.TransmitAdress4);
         }
 
         private void textBoxRow3Data4_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.TransmitAdress2);
+            controlsVarDataChanged(RegMap.TransmitAdress4);
         }
 
         private void textBoxRow3Value5_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.TransmitAdress1);
+            controlsHexValueChanged(RegMap.TransmitAdress5);
         }
 
         private void textBoxRow3Data5_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.TransmitAdress1);
+            controlsVarDataChanged(RegMap.TransmitAdress5);
         }
 
         private void textBoxRow4Value1_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.ReceiveAdress5);
+            controlsHexValueChanged(RegMap.ReceiveAdress1);
         }
 
         private void textBoxRow4Data1_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.ReceiveAdress5);
+            controlsVarDataChanged(RegMap.ReceiveAdress1);
         }
 
         private void textBoxRow4Value2_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.ReceiveAdress4);
+            controlsHexValueChanged(RegMap.ReceiveAdress2);
         }
 
         private void textBoxRow4Data2_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.ReceiveAdress4);
+            controlsVarDataChanged(RegMap.ReceiveAdress2);
         }
 
         private void textBoxRow4Value3_TextChanged(object sender, EventArgs e)
@@ -650,22 +619,22 @@ namespace SBandSerialReader
 
         private void textBoxRow4Value4_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.ReceiveAdress2);
+            controlsHexValueChanged(RegMap.ReceiveAdress4);
         }
 
         private void textBoxRow4Data4_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.ReceiveAdress2);
+            controlsVarDataChanged(RegMap.ReceiveAdress4);
         }
 
         private void textBoxRow4Value5_TextChanged(object sender, EventArgs e)
         {
-            controlsHexValueChanged(RegMap.ReceiveAdress1);
+            controlsHexValueChanged(RegMap.ReceiveAdress5);
         }
 
         private void textBoxRow4Data5_TextChanged(object sender, EventArgs e)
         {
-            controlsVarDataChanged(RegMap.ReceiveAdress1);
+            controlsVarDataChanged(RegMap.ReceiveAdress5);
         }
 
 
