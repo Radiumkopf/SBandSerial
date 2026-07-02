@@ -64,6 +64,8 @@
     <Compile Include="RegData.cs" />
     <Compile Include="RegistersManagerUI.cs" />
     <Compile Include="RegMap.cs" />
+    <Compile Include="SatellitePacketParser.cs" />
+    <Compile Include="SatelliteTCPPacket.cs" />
     <Compile Include="SerialReader.cs" />
     <Compile Include="TcpServer.cs" />
     <EmbeddedResource Include="Form1.resx">

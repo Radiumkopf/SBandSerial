@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO.Ports;
 using System.Linq;
+using System.Net.Sockets;
 using System.Reflection;
 using System.Text;
 using System.Threading;
@@ -212,10 +213,35 @@ namespace SBandSerialReader
                 return;
             }
 
-            // Здесь ты уже в UI-потоке
+            SendACK(clientId, data);
+        
+        // Здесь ты уже в UI-потоке
             ReceivedPackets++;
             labelServerReceived.Text = "Messages received: " + ReceivedPackets;
             WriteTxBuffer(data);
+
+
+        }
+
+        private async void SendACK(int clientId, byte[] data)
+        {
+            SatelliteTCPPacket packet = SatellitePacketParser.Parse(data);
+
+
+
+            SatelliteTCPPacket ack = new SatelliteTCPPacket
+            {
+                Type = PacketType.Ack,
+
+                symbol = packet.symbol,
+                id = packet.id,
+                number = packet.number,
+                size = packet.size,
+                data = packet.data
+            };
+
+
+            await server.SendAsync(clientId, ack);
         }
 
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
