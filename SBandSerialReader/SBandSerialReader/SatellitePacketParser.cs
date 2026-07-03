@@ -34,6 +34,7 @@ namespace SBandSerialReader
                 index += 2;
 
                 byte size = bytes[index++];
+                packet.size = size;
 
                 if (bytes.Length != index + size)
                     throw new InvalidDataException("Размер пакета не соответствует заголовку.");
