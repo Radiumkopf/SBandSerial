@@ -56,6 +56,7 @@ namespace SBandSerialReader
             return data[0];
         }
 
+
         public static string HEXStringToASCIIString(string hex)
         {
             byte[] data = HEXStringToByteArray(hex);

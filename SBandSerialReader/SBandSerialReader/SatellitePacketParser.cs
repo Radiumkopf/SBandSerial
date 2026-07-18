@@ -10,7 +10,7 @@ namespace SBandSerialReader
     internal static class SatellitePacketParser
     {
 
-        public static SatelliteTCPPacket Parse(byte[] bytes)
+        public static FileTransferPacket Parse(byte[] bytes)
         {
             if (bytes == null)
                 throw new ArgumentNullException(nameof(bytes));
@@ -25,9 +25,8 @@ namespace SBandSerialReader
                 //if (bytes[index++] != (byte)'#')
                 //    throw new InvalidDataException("Неверный стартовый символ.");
 
-                SatelliteTCPPacket packet = new SatelliteTCPPacket();
+                FileTransferPacket packet = new FileTransferPacket();
 
-                packet.symbol = (char)bytes[index++];
                 packet.Type = (PacketType)bytes[index++];
                 packet.id = bytes[index++];
                 packet.number = BitConverter.ToInt16(bytes, index);

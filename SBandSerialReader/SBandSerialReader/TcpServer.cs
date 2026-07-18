@@ -142,7 +142,7 @@ namespace SBandSerialReader
             Interlocked.Increment(ref _sentPackets);
         }
 
-        public Task SendAsync(int clientId, SatelliteTCPPacket packet)
+        public Task SendAsync(int clientId, FileTransferPacket packet)
         {
             byte[] bytes = packet.ToByteArray();
 

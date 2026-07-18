@@ -213,7 +213,7 @@ namespace SBandSerialReader
                 return;
             }
 
-            SendACK(clientId, data);
+            //SendACK(clientId, data);
         
         // Здесь ты уже в UI-потоке
             ReceivedPackets++;
@@ -225,23 +225,7 @@ namespace SBandSerialReader
 
         private async void SendACK(int clientId, byte[] data)
         {
-            SatelliteTCPPacket packet = SatellitePacketParser.Parse(data);
 
-
-
-            SatelliteTCPPacket ack = new SatelliteTCPPacket
-            {
-                Type = PacketType.Ack,
-
-                symbol = packet.symbol,
-                id = packet.id,
-                number = packet.number,
-                size = packet.size,
-                data = packet.data
-            };
-
-
-            await server.SendAsync(clientId, ack);
         }
 
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
@@ -475,8 +459,42 @@ namespace SBandSerialReader
             serialPort.StopBits = GetStopBits(comboBoxStopBits.SelectedItem.ToString());
         }
 
+        //Уведомление-эхо об изменении
+        private async Task TxAddrChanged()
+        {
+            if(textBoxRow3Value1.Text != string.Empty && textBoxRow3Value2.Text != string.Empty && textBoxRow3Value3.Text != string.Empty && textBoxRow3Value4.Text != string.Empty && textBoxRow3Value5.Text != string.Empty)
+            {
+                byte[] addr = GetBytesFromTextBoxes(textBoxRow3Value1,
+                    textBoxRow3Value2,
+                    textBoxRow3Value3,
+                    textBoxRow3Value4,
+                    textBoxRow3Value5);
+                
+                FileTransferPacket ftp = new FileTransferPacket(PacketType.AddressChanging, 0, 0, (byte) addr.Length, addr);
 
+                await server.SendAsync(_outputCliendId, ftp);
+            }
+        }
 
+        private byte[] GetBytesFromTextBoxes(params System.Windows.Forms.TextBox[] textBoxes)
+        {
+            List<byte> bytes = new List<byte>();
+
+            
+
+            foreach (System.Windows.Forms.TextBox tb in textBoxes)
+            {
+                if (string.IsNullOrWhiteSpace(tb.Text))
+                    throw new Exception($"Поле {tb.Name} не заполнено.");
+
+                //if (!byte.TryParse(tb.Text, out byte value))
+                //    throw new Exception($"Поле {tb.Name} содержит некорректное значение.");
+
+                bytes.Add(DataConverter.HEXStringToByte(tb.Text));
+            }
+
+            return bytes.ToArray();
+        }
 
         private void controlsHexValueChanged(RegMap reg)
         {
@@ -566,16 +584,20 @@ namespace SBandSerialReader
         private void textBoxRow3Value1_TextChanged(object sender, EventArgs e)
         {
             controlsHexValueChanged(RegMap.TransmitAdress1);
+            TxAddrChanged();
         }
 
         private void textBoxRow3Data1_TextChanged(object sender, EventArgs e)
         {
             controlsVarDataChanged(RegMap.TransmitAdress1);
+
         }
 
         private void textBoxRow3Value2_TextChanged(object sender, EventArgs e)
         {
             controlsHexValueChanged(RegMap.TransmitAdress2);
+            TxAddrChanged();
+
         }
 
         private void textBoxRow3Data2_TextChanged(object sender, EventArgs e)
@@ -586,6 +608,8 @@ namespace SBandSerialReader
         private void textBoxRow3Value3_TextChanged(object sender, EventArgs e)
         {
             controlsHexValueChanged(RegMap.TransmitAdress3);
+            TxAddrChanged();
+
         }
 
         private void textBoxRow3Data3_TextChanged(object sender, EventArgs e)
@@ -596,6 +620,8 @@ namespace SBandSerialReader
         private void textBoxRow3Value4_TextChanged(object sender, EventArgs e)
         {
             controlsHexValueChanged(RegMap.TransmitAdress4);
+            TxAddrChanged();
+
         }
 
         private void textBoxRow3Data4_TextChanged(object sender, EventArgs e)
@@ -606,6 +632,8 @@ namespace SBandSerialReader
         private void textBoxRow3Value5_TextChanged(object sender, EventArgs e)
         {
             controlsHexValueChanged(RegMap.TransmitAdress5);
+            TxAddrChanged();
+
         }
 
         private void textBoxRow3Data5_TextChanged(object sender, EventArgs e)

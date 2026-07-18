@@ -9,28 +9,35 @@ namespace SBandSerialReader
 {
     public enum PacketType : byte
     {
-        Data = 0,
-        Ack = 1
+        TimeSet = 0x0A,
+        FileSending = 0x0B,
+        FileRequesting = 0x0C,
+        B = 0x0D,
+
+        TimeSetAck = 0x1A,
+        FileSendingAck = 0x1B,
+        FileRequestingAck = 0x1C,
+        FileRequestingLast = 0x2C,
+        AddressChanging = 0xAC
     }
-    
-    internal class SatelliteTCPPacket
+
+    internal class FileTransferPacket
     {
 
-        public char symbol { get; set; }
         public PacketType Type { get; set; }
         public byte id { get; set; }
         public short number { get; set; }
         public byte size { get; set; }
         public byte[] data { get; set; }
 
-        public SatelliteTCPPacket()
+        public FileTransferPacket()
         {
 
         }
-        public SatelliteTCPPacket(char _symbol, byte _id, short _number, byte _size, byte[] _data)
+        public FileTransferPacket(PacketType type, byte _id, short _number, byte _size, byte[] _data)
         {
-            this.Type = PacketType.Data;
-            this.symbol = _symbol;
+            this.Type = type;
+
             this.id = _id;
             this.number = _number;
             this.size = _size;
@@ -43,7 +50,6 @@ namespace SBandSerialReader
             List<byte> fullPackage = new List<byte>();
 
 
-            fullPackage.Add((byte)symbol);
             fullPackage.Add((byte)Type);
             fullPackage.Add(id);
             fullPackage.AddRange(BitConverter.GetBytes(number));
@@ -52,6 +58,6 @@ namespace SBandSerialReader
 
             return fullPackage.ToArray();
         }
+
     }
-    
 }
