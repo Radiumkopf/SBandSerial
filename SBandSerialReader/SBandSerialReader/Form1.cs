@@ -228,8 +228,12 @@ namespace SBandSerialReader
 
         }
 
-        private static void OnTimedEvent(Object source, ElapsedEventArgs e)
+        private  void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
+            if (!checkBoxATimer.Checked)
+            {
+                return;
+            }
             byte[] read = CommandGenerator.RegisterRead(deviceAddress, 0, 43);
             if (serialPort.IsOpen)
             {
@@ -2033,5 +2037,7 @@ namespace SBandSerialReader
             byte[] data = DataConverter.ASCIIStringToByteArray(textBoxSendData.Text);
             await server.SendAsync(_outputCliendId, data);
         }
+
+
     }
 }

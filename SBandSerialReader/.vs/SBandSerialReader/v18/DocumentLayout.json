@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\repositories\\SBandSerial\\SBandSerialReader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\dataconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\dataconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|d:\\repositories\\sbandserial\\sbandserialreader\\sbandserialreader\\serialreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\serialreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|d:\\repositories\\sbandserial\\sbandserialreader\\sbandserialreader\\serialreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\serialreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -27,20 +19,24 @@
       "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\registersmanagerui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\filetransferpacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\filetransferpacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\regmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\regmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\commandgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\commandgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\satellitepacketparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\satellitepacketparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\tcpserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\dataconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\dataconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|D:\\repositories\\SBandSerial\\SBandSerialReader\\sbandserialreader\\filetransferpacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0914B561-6D0D-4BB8-AA3B-6A632A8D6BFD}|SBandSerialReader\\SBandSerialReader.csproj|solutionrelative:sbandserialreader\\filetransferpacket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,18 +58,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "RegistersManagerUI.cs",
+              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\RegistersManagerUI.cs",
+              "RelativeDocumentMoniker": "SBandSerialReader\\RegistersManagerUI.cs",
+              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\RegistersManagerUI.cs",
+              "RelativeToolTip": "SBandSerialReader\\RegistersManagerUI.cs",
+              "ViewState": "AgIAAOABAAAAAAAAAAAqwDkCAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T07:53:49.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\Form1.cs",
+              "RelativeDocumentMoniker": "SBandSerialReader\\Form1.cs",
+              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\Form1.cs",
+              "RelativeToolTip": "SBandSerialReader\\Form1.cs",
+              "ViewState": "AgIAAJQBAAAAAAAAAAAawJwBAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T07:53:49.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\Form1.cs",
               "RelativeDocumentMoniker": "SBandSerialReader\\Form1.cs",
               "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "SBandSerialReader\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T07:53:49.481Z"
+              "WhenOpened": "2026-01-29T07:53:49.481Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "RegMap.cs",
               "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\RegMap.cs",
               "RelativeDocumentMoniker": "SBandSerialReader\\RegMap.cs",
@@ -85,15 +107,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CommandGenerator.cs",
-              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\CommandGenerator.cs",
-              "RelativeDocumentMoniker": "SBandSerialReader\\CommandGenerator.cs",
-              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\CommandGenerator.cs",
-              "RelativeToolTip": "SBandSerialReader\\CommandGenerator.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwD8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "SatellitePacketParser.cs",
+              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\SatellitePacketParser.cs",
+              "RelativeDocumentMoniker": "SBandSerialReader\\SatellitePacketParser.cs",
+              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\SatellitePacketParser.cs",
+              "RelativeToolTip": "SBandSerialReader\\SatellitePacketParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T09:56:29.358Z"
+              "WhenOpened": "2026-07-02T10:49:07.979Z"
             },
             {
               "$type": "Document",
@@ -103,63 +125,38 @@
               "RelativeDocumentMoniker": "SBandSerialReader\\SerialReader.cs",
               "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\SerialReader.cs",
               "RelativeToolTip": "SBandSerialReader\\SerialReader.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAYwB4AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwB4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-29T07:53:49.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TcpServer.cs",
-              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\TcpServer.cs",
-              "RelativeDocumentMoniker": "SBandSerialReader\\TcpServer.cs",
-              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\TcpServer.cs",
-              "RelativeToolTip": "SBandSerialReader\\TcpServer.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAlwJIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T10:57:05.576Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "DataConverter.cs",
               "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\DataConverter.cs",
               "RelativeDocumentMoniker": "SBandSerialReader\\DataConverter.cs",
               "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\DataConverter.cs",
               "RelativeToolTip": "SBandSerialReader\\DataConverter.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T10:58:39.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegistersManagerUI.cs",
-              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\RegistersManagerUI.cs",
-              "RelativeDocumentMoniker": "SBandSerialReader\\RegistersManagerUI.cs",
-              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\RegistersManagerUI.cs",
-              "RelativeToolTip": "SBandSerialReader\\RegistersManagerUI.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwDAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T07:53:49.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\Form1.cs",
-              "RelativeDocumentMoniker": "SBandSerialReader\\Form1.cs",
-              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\Form1.cs",
-              "RelativeToolTip": "SBandSerialReader\\Form1.cs",
-              "ViewState": "AgIAAMoBAAAAAAAAAAAlwNwBAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-29T07:53:49.334Z"
+              "WhenOpened": "2026-07-16T10:58:39.139Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "TcpServer.cs",
+              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\TcpServer.cs",
+              "RelativeDocumentMoniker": "SBandSerialReader\\TcpServer.cs",
+              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\TcpServer.cs",
+              "RelativeToolTip": "SBandSerialReader\\TcpServer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAjwJIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-01T10:57:05.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "FileTransferPacket.cs",
               "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\FileTransferPacket.cs",
               "RelativeDocumentMoniker": "SBandSerialReader\\FileTransferPacket.cs",
@@ -168,18 +165,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAD4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-06T09:11:21.977Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SatellitePacketParser.cs",
-              "DocumentMoniker": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\SatellitePacketParser.cs",
-              "RelativeDocumentMoniker": "SBandSerialReader\\SatellitePacketParser.cs",
-              "ToolTip": "D:\\repositories\\SBandSerial\\SBandSerialReader\\SBandSerialReader\\SatellitePacketParser.cs",
-              "RelativeToolTip": "SBandSerialReader\\SatellitePacketParser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T10:49:07.979Z"
             }
           ]
         }
