@@ -475,8 +475,11 @@ namespace SBandSerialReader
                     textBoxRow3Value5);
                 
                 FileTransferPacket ftp = new FileTransferPacket(PacketType.AddressChanging, 0, 0, (byte) addr.Length, addr);
+                byte[] original = ftp.ToByteArray(); //заполнение шапки для единообразия
+                byte[] zerosftp = new byte[35];
+                Array.Copy(original, 0, zerosftp, 25, original.Length);
 
-                await server.SendAsync(_outputCliendId, ftp);
+                await server.SendAsync(_outputCliendId, zerosftp);
             }
         }
 
