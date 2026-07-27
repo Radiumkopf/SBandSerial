@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxATimer = new System.Windows.Forms.CheckBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -304,7 +305,7 @@
             this.labelServerReceived = new System.Windows.Forms.Label();
             this.buttonCloseConnect = new System.Windows.Forms.Button();
             this.buttonOpenConnect = new System.Windows.Forms.Button();
-            this.checkBoxATimer = new System.Windows.Forms.CheckBox();
+            this.checkBoxReadFifo = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDataBits)).BeginInit();
@@ -327,6 +328,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.checkBoxReadFifo);
             this.groupBox1.Controls.Add(this.checkBoxATimer);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button1);
@@ -352,6 +354,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COM port settings";
+            // 
+            // checkBoxATimer
+            // 
+            this.checkBoxATimer.AutoSize = true;
+            this.checkBoxATimer.Location = new System.Drawing.Point(255, 113);
+            this.checkBoxATimer.Name = "checkBoxATimer";
+            this.checkBoxATimer.Size = new System.Drawing.Size(117, 20);
+            this.checkBoxATimer.TabIndex = 15;
+            this.checkBoxATimer.Text = "Auto regs read";
+            this.checkBoxATimer.UseVisualStyleBackColor = true;
             // 
             // button6
             // 
@@ -3448,17 +3460,15 @@
             this.buttonOpenConnect.UseVisualStyleBackColor = true;
             this.buttonOpenConnect.Click += new System.EventHandler(this.buttonOpenConnect_Click);
             // 
-            // checkBoxATimer
+            // checkBoxReadFifo
             // 
-            this.checkBoxATimer.AutoSize = true;
-            this.checkBoxATimer.Checked = true;
-            this.checkBoxATimer.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBoxATimer.Location = new System.Drawing.Point(255, 133);
-            this.checkBoxATimer.Name = "checkBoxATimer";
-            this.checkBoxATimer.Size = new System.Drawing.Size(112, 20);
-            this.checkBoxATimer.TabIndex = 15;
-            this.checkBoxATimer.Text = "ATimer active";
-            this.checkBoxATimer.UseVisualStyleBackColor = true;
+            this.checkBoxReadFifo.AutoSize = true;
+            this.checkBoxReadFifo.Location = new System.Drawing.Point(255, 139);
+            this.checkBoxReadFifo.Name = "checkBoxReadFifo";
+            this.checkBoxReadFifo.Size = new System.Drawing.Size(144, 20);
+            this.checkBoxReadFifo.TabIndex = 16;
+            this.checkBoxReadFifo.Text = "Auto RX buffer read";
+            this.checkBoxReadFifo.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -3785,6 +3795,7 @@
         private System.Windows.Forms.TextBox textBoxSendData;
         private System.Windows.Forms.TextBox textBoxTxBufferHEXLog;
         private System.Windows.Forms.CheckBox checkBoxATimer;
+        private System.Windows.Forms.CheckBox checkBoxReadFifo;
     }
 }
 

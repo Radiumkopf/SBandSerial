@@ -91,3 +91,13 @@ D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandS
 D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
 D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
 D:\repositories\SBandSerial\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe.config
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.exe
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\bin\Debug\SBandSerialReader.pdb
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.AssemblyReference.cache
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Form1.resources
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.Properties.Resources.resources
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.GenerateResource.cache
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.csproj.CoreCompileInputs.cache
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.exe
+C:\Users\ForceFire\Desktop\Soft\SBandSerial-main\SBandSerialReader\SBandSerialReader\obj\Debug\SBandSerialReader.pdb

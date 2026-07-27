@@ -36,6 +36,7 @@ namespace SBandSerialReader
         private bool isReadingRegs = false;
 
         private static System.Timers.Timer aTimer;
+        private static System.Timers.Timer readFifoTimer;
 
         private Queue<List<byte>> rxFifo = new Queue<List<byte>>();
         private Queue<List<byte>> txFifo = new Queue<List<byte>>();
@@ -96,7 +97,12 @@ namespace SBandSerialReader
             aTimer = new System.Timers.Timer(500);
             aTimer.Elapsed += OnTimedEvent;
             aTimer.AutoReset = true;
-            //aTimer.Enabled = true;
+            aTimer.Enabled = true;
+
+            readFifoTimer = new System.Timers.Timer(1000);
+            readFifoTimer.Elapsed += OnTimedEventReadFifo;
+            readFifoTimer.AutoReset = true;
+            readFifoTimer.Enabled = true;
 
             panel1.Controls.Add(groupBox3);
 
@@ -228,13 +234,26 @@ namespace SBandSerialReader
 
         }
 
-        private  void OnTimedEvent(Object source, ElapsedEventArgs e)
+        private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
             if (!checkBoxATimer.Checked)
             {
                 return;
             }
             byte[] read = CommandGenerator.RegisterRead(deviceAddress, 0, 43);
+            if (serialPort.IsOpen)
+            {
+                serialPort.Write(read, 0, read.Length);
+            }
+        }
+
+        private void OnTimedEventReadFifo(Object source, ElapsedEventArgs e)
+        {
+            if (!checkBoxReadFifo.Checked)
+            {
+                return;
+            }
+            byte[] read = CommandGenerator.FifoRead(deviceAddress);
             if (serialPort.IsOpen)
             {
                 serialPort.Write(read, 0, read.Length);
@@ -475,11 +494,8 @@ namespace SBandSerialReader
                     textBoxRow3Value5);
                 
                 FileTransferPacket ftp = new FileTransferPacket(PacketType.AddressChanging, 0, 0, (byte) addr.Length, addr);
-                byte[] original = ftp.ToByteArray(); //заполнение шапки для единообразия
-                byte[] zerosftp = new byte[35];
-                Array.Copy(original, 0, zerosftp, 25, original.Length);
 
-                await server.SendAsync(_outputCliendId, zerosftp);
+                await server.SendAsync(_outputCliendId, ftp);
             }
         }
 
@@ -2040,7 +2056,5 @@ namespace SBandSerialReader
             byte[] data = DataConverter.ASCIIStringToByteArray(textBoxSendData.Text);
             await server.SendAsync(_outputCliendId, data);
         }
-
-
     }
 }
