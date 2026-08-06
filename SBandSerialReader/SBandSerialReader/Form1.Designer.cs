@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxReadFifo = new System.Windows.Forms.CheckBox();
             this.checkBoxATimer = new System.Windows.Forms.CheckBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -305,7 +306,7 @@
             this.labelServerReceived = new System.Windows.Forms.Label();
             this.buttonCloseConnect = new System.Windows.Forms.Button();
             this.buttonOpenConnect = new System.Windows.Forms.Button();
-            this.checkBoxReadFifo = new System.Windows.Forms.CheckBox();
+            this.labelIPAddress = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDataBits)).BeginInit();
@@ -354,6 +355,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "COM port settings";
+            // 
+            // checkBoxReadFifo
+            // 
+            this.checkBoxReadFifo.AutoSize = true;
+            this.checkBoxReadFifo.Location = new System.Drawing.Point(255, 139);
+            this.checkBoxReadFifo.Name = "checkBoxReadFifo";
+            this.checkBoxReadFifo.Size = new System.Drawing.Size(144, 20);
+            this.checkBoxReadFifo.TabIndex = 16;
+            this.checkBoxReadFifo.Text = "Auto RX buffer read";
+            this.checkBoxReadFifo.UseVisualStyleBackColor = true;
             // 
             // checkBoxATimer
             // 
@@ -3375,6 +3386,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.labelIPAddress);
             this.groupBox4.Controls.Add(this.SendButton);
             this.groupBox4.Controls.Add(this.textBoxSendData);
             this.groupBox4.Controls.Add(this.labelServerStatus);
@@ -3460,15 +3472,14 @@
             this.buttonOpenConnect.UseVisualStyleBackColor = true;
             this.buttonOpenConnect.Click += new System.EventHandler(this.buttonOpenConnect_Click);
             // 
-            // checkBoxReadFifo
+            // labelIPAddress
             // 
-            this.checkBoxReadFifo.AutoSize = true;
-            this.checkBoxReadFifo.Location = new System.Drawing.Point(255, 139);
-            this.checkBoxReadFifo.Name = "checkBoxReadFifo";
-            this.checkBoxReadFifo.Size = new System.Drawing.Size(144, 20);
-            this.checkBoxReadFifo.TabIndex = 16;
-            this.checkBoxReadFifo.Text = "Auto RX buffer read";
-            this.checkBoxReadFifo.UseVisualStyleBackColor = true;
+            this.labelIPAddress.AutoSize = true;
+            this.labelIPAddress.Location = new System.Drawing.Point(179, 42);
+            this.labelIPAddress.Name = "labelIPAddress";
+            this.labelIPAddress.Size = new System.Drawing.Size(11, 16);
+            this.labelIPAddress.TabIndex = 7;
+            this.labelIPAddress.Text = "-";
             // 
             // Form1
             // 
@@ -3796,6 +3807,7 @@
         private System.Windows.Forms.TextBox textBoxTxBufferHEXLog;
         private System.Windows.Forms.CheckBox checkBoxATimer;
         private System.Windows.Forms.CheckBox checkBoxReadFifo;
+        private System.Windows.Forms.Label labelIPAddress;
     }
 }
 

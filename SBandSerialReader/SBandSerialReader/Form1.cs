@@ -1576,12 +1576,15 @@ namespace SBandSerialReader
         private async void buttonOpenConnect_Click(object sender, EventArgs e)
         {
             await server.StartAsync("127.0.0.1", 8924);
+            labelIPAddress.Text = server.GetIPAddress().ToString();
+
             labelServerStatus.Text = "Server connected";
         }
 
         private void buttonCloseConnect_Click(object sender, EventArgs e)
         {
             server.Stop();
+            labelIPAddress.Text = "-";
             labelServerStatus.Text = "Server disconnected";
         }
 

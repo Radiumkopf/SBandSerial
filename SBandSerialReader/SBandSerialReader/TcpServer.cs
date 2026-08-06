@@ -30,6 +30,12 @@ namespace SBandSerialReader
         private bool _isRunning;
         public bool IsRunning => _isRunning;
 
+        public IPAddress GetIPAddress()
+        {
+            IPEndPoint endpoint = (IPEndPoint)_listener.LocalEndpoint;
+            return endpoint.Address;
+        }
+
         public Task StartAsync(string ip, int port)
         {
             if (_isRunning)
