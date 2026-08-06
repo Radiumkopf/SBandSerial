@@ -1575,7 +1575,7 @@ namespace SBandSerialReader
 
         private async void buttonOpenConnect_Click(object sender, EventArgs e)
         {
-            await server.StartAsync("127.0.0.1", 8924);
+            await server.StartAsync("127.0.0.1", (int)numericUpDownConnectionPort.Value);
             labelIPAddress.Text = server.GetIPAddress().ToString();
 
             labelServerStatus.Text = "Server connected";

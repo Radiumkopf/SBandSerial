@@ -299,6 +299,7 @@
             this.textBoxRxBufferHEX = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.labelIPAddress = new System.Windows.Forms.Label();
             this.SendButton = new System.Windows.Forms.Button();
             this.textBoxSendData = new System.Windows.Forms.TextBox();
             this.labelServerStatus = new System.Windows.Forms.Label();
@@ -306,7 +307,8 @@
             this.labelServerReceived = new System.Windows.Forms.Label();
             this.buttonCloseConnect = new System.Windows.Forms.Button();
             this.buttonOpenConnect = new System.Windows.Forms.Button();
-            this.labelIPAddress = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.numericUpDownConnectionPort = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDataBits)).BeginInit();
@@ -325,6 +327,7 @@
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConnectionPort)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -3386,6 +3389,8 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.numericUpDownConnectionPort);
+            this.groupBox4.Controls.Add(this.label62);
             this.groupBox4.Controls.Add(this.labelIPAddress);
             this.groupBox4.Controls.Add(this.SendButton);
             this.groupBox4.Controls.Add(this.textBoxSendData);
@@ -3402,6 +3407,15 @@
             this.groupBox4.TabIndex = 176;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Server";
+            // 
+            // labelIPAddress
+            // 
+            this.labelIPAddress.AutoSize = true;
+            this.labelIPAddress.Location = new System.Drawing.Point(179, 42);
+            this.labelIPAddress.Name = "labelIPAddress";
+            this.labelIPAddress.Size = new System.Drawing.Size(11, 16);
+            this.labelIPAddress.TabIndex = 7;
+            this.labelIPAddress.Text = "-";
             // 
             // SendButton
             // 
@@ -3472,14 +3486,37 @@
             this.buttonOpenConnect.UseVisualStyleBackColor = true;
             this.buttonOpenConnect.Click += new System.EventHandler(this.buttonOpenConnect_Click);
             // 
-            // labelIPAddress
+            // label62
             // 
-            this.labelIPAddress.AutoSize = true;
-            this.labelIPAddress.Location = new System.Drawing.Point(179, 42);
-            this.labelIPAddress.Name = "labelIPAddress";
-            this.labelIPAddress.Size = new System.Drawing.Size(11, 16);
-            this.labelIPAddress.TabIndex = 7;
-            this.labelIPAddress.Text = "-";
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(334, 22);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(34, 16);
+            this.label62.TabIndex = 8;
+            this.label62.Text = "Port:";
+            // 
+            // numericUpDownConnectionPort
+            // 
+            this.numericUpDownConnectionPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.numericUpDownConnectionPort.Location = new System.Drawing.Point(326, 40);
+            this.numericUpDownConnectionPort.Maximum = new decimal(new int[] {
+            49000,
+            0,
+            0,
+            0});
+            this.numericUpDownConnectionPort.Minimum = new decimal(new int[] {
+            1024,
+            0,
+            0,
+            0});
+            this.numericUpDownConnectionPort.Name = "numericUpDownConnectionPort";
+            this.numericUpDownConnectionPort.Size = new System.Drawing.Size(68, 27);
+            this.numericUpDownConnectionPort.TabIndex = 9;
+            this.numericUpDownConnectionPort.Value = new decimal(new int[] {
+            8924,
+            0,
+            0,
+            0});
             // 
             // Form1
             // 
@@ -3523,6 +3560,7 @@
             this.panel1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownConnectionPort)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3808,6 +3846,8 @@
         private System.Windows.Forms.CheckBox checkBoxATimer;
         private System.Windows.Forms.CheckBox checkBoxReadFifo;
         private System.Windows.Forms.Label labelIPAddress;
+        private System.Windows.Forms.NumericUpDown numericUpDownConnectionPort;
+        private System.Windows.Forms.Label label62;
     }
 }
 
